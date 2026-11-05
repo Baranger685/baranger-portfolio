@@ -111,7 +111,23 @@
 }
 
 .site-shell .project-view-button {
+  border: 1px solid #141414;
+  background-color: #141414 !important;
   color: #fff !important;
+}
+
+.site-shell .project-view-button:hover {
+  background-color: #333 !important;
+}
+
+.site-shell.dark-mode .project-view-button {
+  border-color: #f2f2ef;
+  background-color: #f2f2ef !important;
+  color: #141414 !important;
+}
+
+.site-shell.dark-mode .project-view-button:hover {
+  background-color: #d7d7d2 !important;
 }
 
 .editorial-header {
