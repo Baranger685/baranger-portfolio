@@ -684,7 +684,7 @@
   color: #f2f2ef;
 }
 
-.site-shell.dark-mode [class*="text-white"]:not(.btn-primary) {
+.site-shell.dark-mode [class*="text-white"]:not(.btn-primary):not(.project-view-button) {
   color: #f2f2ef !important;
 }
 
