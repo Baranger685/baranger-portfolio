@@ -22,7 +22,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed">
               <p>
-                I'm a 4th-year undergraduate pursuing a <strong className="text-white">BSc (Hons) in Information Technology</strong> at SLIIT, 
+                I have graduated with a <strong className="text-white">BSc (Hons) in Information Technology</strong> from SLIIT,
                 with a strong foundation in both software development and business analysis.
               </p>
               <p>
