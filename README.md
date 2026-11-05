@@ -78,7 +78,7 @@ baranger-portfolio/
 ## Contact
 
 - Email: baranger369@gmail.com
-- LinkedIn: linkedin.com/in/baranger-benjamin
+- LinkedIn: https://www.linkedin.com/in/baranger-benjamin-287324210
 - GitHub: github.com/Baranger685
 
 ---

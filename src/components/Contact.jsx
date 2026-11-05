@@ -75,7 +75,7 @@ export default function Contact() {
                   <Github size={18} /> GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/baranger-benjamin"
+                  href="https://www.linkedin.com/in/baranger-benjamin-287324210"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-full glass hover:bg-white/10 transition text-sm"
