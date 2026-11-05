@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import publicAsset from '../utils/publicAsset'
 import { ArrowDownRight } from 'lucide-react'
 
 export default function Hero() {
@@ -57,7 +58,7 @@ export default function Hero() {
             >
               <div className="showcase-art" aria-hidden="true">
                 <img
-                  src="/portfolio-showcase.png"
+                  src={publicAsset('portfolio-showcase.png')}
                   alt=""
                   className="showcase-photo"
                   style={{ '--showcase-image-offset': `${-index * 33.333333}%` }}

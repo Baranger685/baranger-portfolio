@@ -2,15 +2,16 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, Menu, Moon, Sun, X } from 'lucide-react'
 import FlowingMenu from './FlowingMenu'
+import publicAsset from '../utils/publicAsset'
 
 const links = [
-  { text: 'About', link: '#about', meta: 'PROFILE', image: '/portfolio-showcase.png' },
-  { text: 'Experience', link: '#experience', meta: 'CAREER', image: '/portfolio-showcase.png' },
-  { text: 'Skills', link: '#skills', meta: 'TOOLKIT', image: '/portfolio-showcase.png' },
-  { text: 'Projects', link: '#projects', meta: 'SELECTED WORK', image: '/portfolio-showcase.png' },
-  { text: 'Media & Editing', link: '#media', meta: 'VIDEO WORK', image: '/portfolio-showcase.png' },
-  { text: 'Education', link: '#education', meta: 'BACKGROUND', image: '/portfolio-showcase.png' },
-  { text: 'Contact', link: '#contact', meta: 'SAY HELLO', image: '/portfolio-showcase.png' },
+  { text: 'About', link: '#about', meta: 'PROFILE', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Experience', link: '#experience', meta: 'CAREER', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Skills', link: '#skills', meta: 'TOOLKIT', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Projects', link: '#projects', meta: 'SELECTED WORK', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Media & Editing', link: '#media', meta: 'VIDEO WORK', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Education', link: '#education', meta: 'BACKGROUND', image: publicAsset('portfolio-showcase.png') },
+  { text: 'Contact', link: '#contact', meta: 'SAY HELLO', image: publicAsset('portfolio-showcase.png') },
 ]
 
 export default function Navbar({ scrolled, darkMode, onToggleDarkMode }) {

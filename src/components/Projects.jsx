@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { ArrowLeft, ArrowRight, ExternalLink, Github, Layers, Play, X } from 'lucide-react'
+import publicAsset from '../utils/publicAsset'
 
 const projects = [
   {
@@ -12,10 +13,10 @@ const projects = [
     color: 'from-white/15 to-gray-500/10',
     codeUrl: 'https://github.com/Baranger685/JOB-CARD',
     gallery: [
-      '/job-card/job-card-01.png',
-      '/job-card/job-card-02.png',
+      publicAsset('job-card/job-card-01.png'),
+      publicAsset('job-card/job-card-02.png'),
     ],
-    video: '/job-card/job-card-demo.mp4',
+    video: publicAsset('job-card/job-card-demo.mp4'),
   },
   {
     title: 'ECO Fitness',
@@ -25,12 +26,12 @@ const projects = [
     color: 'from-white/15 to-gray-500/10',
     codeUrl: 'https://github.com/Baranger685/ECO-Fitness',
     gallery: [
-      '/eco-fitness/eco-fitness-01.png',
-      '/eco-fitness/eco-fitness-02.png',
-      '/eco-fitness/eco-fitness-03.png',
-      '/eco-fitness/eco-fitness-04.png',
+      publicAsset('eco-fitness/eco-fitness-01.png'),
+      publicAsset('eco-fitness/eco-fitness-02.png'),
+      publicAsset('eco-fitness/eco-fitness-03.png'),
+      publicAsset('eco-fitness/eco-fitness-04.png'),
     ],
-    video: '/eco-fitness/eco-fitness-demo.mp4',
+    video: publicAsset('eco-fitness/eco-fitness-demo.mp4'),
   },
   {
     title: 'Fitness Tracking App UI/UX',
@@ -39,13 +40,13 @@ const projects = [
     tags: ['Figma', 'UI/UX', 'Mobile'],
     color: 'from-white/15 to-gray-500/10',
     gallery: [
-      '/fitness-tracker/fitness-deck-01.png',
-      '/fitness-tracker/fitness-deck-02.png',
-      '/fitness-tracker/fitness-deck-03.png',
-      '/fitness-tracker/fitness-deck-04.png',
-      '/fitness-tracker/fitness-deck-05.png',
+      publicAsset('fitness-tracker/fitness-deck-01.png'),
+      publicAsset('fitness-tracker/fitness-deck-02.png'),
+      publicAsset('fitness-tracker/fitness-deck-03.png'),
+      publicAsset('fitness-tracker/fitness-deck-04.png'),
+      publicAsset('fitness-tracker/fitness-deck-05.png'),
     ],
-    video: '/fitness-tracker/fitness-demo.mp4',
+    video: publicAsset('fitness-tracker/fitness-demo.mp4'),
   },
   {
     title: 'Bridal & Furniture E-Commerce',
@@ -55,11 +56,11 @@ const projects = [
     color: 'from-white/15 to-gray-500/10',
     codeUrl: 'https://github.com/DineniDaundasekara/Bridal_Ware_project',
     gallery: [
-      '/bridal-ware/homepage-ui.jpg',
-      '/bridal-ware/homepage-collection.jpg',
-      '/bridal-ware/homepage-highlight-01.jpg',
-      '/bridal-ware/homepage-highlight-02.jpg',
-      '/bridal-ware/homepage-highlight-03.jpg',
+      publicAsset('bridal-ware/homepage-ui.jpg'),
+      publicAsset('bridal-ware/homepage-collection.jpg'),
+      publicAsset('bridal-ware/homepage-highlight-01.jpg'),
+      publicAsset('bridal-ware/homepage-highlight-02.jpg'),
+      publicAsset('bridal-ware/homepage-highlight-03.jpg'),
     ],
   },
   {
@@ -69,16 +70,16 @@ const projects = [
     tags: ['Figma', 'UI/UX', 'Accessibility'],
     color: 'from-white/15 to-gray-500/10',
     gallery: [
-      '/dmt-redesign/Pasted Image.png',
-      '/dmt-redesign/Pasted Image 2.png',
-      '/dmt-redesign/Screenshot 2026-11-04 193804.png',
-      '/dmt-redesign/Screenshot 2026-11-04 193840.png',
-      '/dmt-redesign/Screenshot 2026-11-04 193911.png',
-      '/dmt-redesign/Screenshot 2026-11-04 193947.png',
-      '/dmt-redesign/Screenshot 2026-11-04 194044.png',
-      '/dmt-redesign/Screenshot 2026-11-04 194151.png',
+      publicAsset('dmt-redesign/Pasted Image.png'),
+      publicAsset('dmt-redesign/Pasted Image 2.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 193804.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 193840.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 193911.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 193947.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 194044.png'),
+      publicAsset('dmt-redesign/Screenshot 2026-11-04 194151.png'),
     ],
-    video: '/dmt-redesign/dmt-demo.mp4',
+    video: publicAsset('dmt-redesign/dmt-demo.mp4'),
   },
 ]
 

@@ -1,9 +1,10 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import publicAsset from '../utils/publicAsset'
 
 const videos = [
-  { title: 'Video 01', src: '/media/video-01.mp4' },
-  { title: 'Video 02', src: '/media/video-02.mp4' },
+  { title: 'Video 01', src: publicAsset('media/video-01.mp4') },
+  { title: 'Video 02', src: publicAsset('media/video-02.mp4') },
 ]
 
 export default function Media() {
