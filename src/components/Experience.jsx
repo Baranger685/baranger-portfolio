@@ -25,6 +25,27 @@ const experiences = [
       'Support communication between business and technical teams to optimize workflows.',
     ],
   },
+  {
+    title: 'MERCH Team Lead',
+    company: 'D-VOICE',
+    period: '2024',
+    type: 'Leadership',
+    points: [],
+  },
+  {
+    title: 'Western Music Guitarist',
+    company: '',
+    period: '2014 – 2022',
+    type: 'Music',
+    points: [],
+  },
+  {
+    title: 'CYIA Mission Compressor',
+    company: 'CEF',
+    period: '2018',
+    type: 'Community',
+    points: [],
+  },
 ]
 
 export default function Experience() {
@@ -71,10 +92,12 @@ export default function Experience() {
                           <Briefcase size={18} className="text-white/80" />
                           {exp.title}
                         </h3>
-                        <p className="text-white/75 flex items-center gap-1.5 mt-1">
-                          <Building2 size={15} />
-                          {exp.company}
-                        </p>
+                        {exp.company && (
+                          <p className="text-white/75 flex items-center gap-1.5 mt-1">
+                            <Building2 size={15} />
+                            {exp.company}
+                          </p>
+                        )}
                       </div>
                       <div className="text-right">
                         <span className="text-sm text-gray-400">{exp.period}</span>
@@ -86,14 +109,16 @@ export default function Experience() {
                       </div>
                     </div>
 
-                    <ul className="space-y-2 mt-4">
-                      {exp.points.map((point, idx) => (
-                        <li key={idx} className="flex gap-2 text-gray-300 text-sm leading-relaxed">
-                          <span className="text-white/70 mt-1.5">▹</span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
+                    {exp.points.length > 0 && (
+                      <ul className="space-y-2 mt-4">
+                        {exp.points.map((point, idx) => (
+                          <li key={idx} className="flex gap-2 text-gray-300 text-sm leading-relaxed">
+                            <span className="text-white/70 mt-1.5">▹</span>
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </motion.div>
                 </motion.div>
               ))}
