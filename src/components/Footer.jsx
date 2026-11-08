@@ -11,7 +11,7 @@ export default function Footer() {
             <span className="gradient-text">Baranger Benjamin</span>
           </p>
           <p className="text-sm text-gray-500 mt-1">
-            © {year} · Built with React & Tailwind
+            © {year}
           </p>
         </div>
 
